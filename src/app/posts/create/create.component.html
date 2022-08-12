@@ -1,0 +1,14 @@
+<div class="container">
+    <legend>Create</legend>
+    <form>
+      <div class="mb-3">
+        <label for="txtName" class="form-label">Title</label>
+        <input type="text" name="title" [(ngModel)] = "postForm.title" class="form-control" id="txtName" />
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" name="body" [(ngModel)] = "postForm.body" placeholder="Body" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Body</label>
+      </div>
+      <button type="button" (click)="create()" class="btn btn-primary">Create</button>
+    </form>
+  </div>
